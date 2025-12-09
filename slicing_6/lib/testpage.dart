@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:slicing_6/komponen/isi.dart';
 
 class Testpage extends StatelessWidget {
   const Testpage({super.key});
@@ -8,20 +9,15 @@ class Testpage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.deepPurple,
       body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.only(left: 30, top: 30),
-          child: Row(
+        child: SingleChildScrollView(
+          child: Column(
             children: [
-              SizedBox(height: 10,),
-
-              Container(
-                height: 200,
-                width: 200,
-                color: Colors.white,
-              )
+              SizedBox(height: 30,),
+              Isi(),
+              Isi(),
+              Isi(),
             ],
           ),
-          
         ),
       ),
     );
